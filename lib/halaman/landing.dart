@@ -53,11 +53,14 @@ class Landing extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             // Image.asset('name'),
-                            // Text('Baju'),
+                            Text('Baju'),
                           ],
                         ),
                       ),
-                      onTap: () {},
+                      onTap: () {Navigator.pushNamed(
+                            context, '/baju',
+                            arguments: '../assets/images/baju.jpg'
+                          );},
                     ),
                   ),
                   SizedBox(

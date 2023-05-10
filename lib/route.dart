@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gaya_kito/halaman/landing.dart';
 // import 'package:gaya_kito/layar5.dart';
-
+import 'package:gaya_kito/halaman/baju.dart';
 class RouteGenerator{
   static Route<dynamic> generateRoute(RouteSettings settings){
     final args= settings.arguments;
@@ -12,12 +12,12 @@ class RouteGenerator{
         }
         return _errorRoute();
         break;
-        // case '/lima':
-        //   if(args is String){
-        //     return MaterialPageRoute(builder: (_)=> FiveScreen(data: args));
-        //   }
-        //      return _errorRoute();
-        // break;
+        case '/baju':
+          if(args is String){
+            return MaterialPageRoute(builder: (_)=> Baju(baju: args));
+          }
+             return _errorRoute();
+        break;
       default:
       return _errorRoute();
 
