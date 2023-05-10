@@ -1,16 +1,16 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
-class Landing extends StatelessWidget {
-  final String logo;
-  const Landing({super.key, required this.logo});
+class Celana extends StatelessWidget {
+  final String celana;
+  const Celana({super.key, required this.celana});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('GAYA KITO'),
-        leading: Image.asset(logo),
+        leading: Icon(Icons.shop),
         backgroundColor: Colors.orange,
       ),
       body: Container(
@@ -53,13 +53,13 @@ class Landing extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             // Image.asset('name'),
-                            Text('Baju'),
+                            Text('Celana'),
                           ],
                         ),
                       ),
                       onTap: () {Navigator.pushNamed(
-                            context, '/baju',
-                            arguments: '../assets/images/baju.jpg'
+                            context, '/celana',
+                            arguments: '../assets/images/celana.jpg'
                           );},
                     ),
                   ),

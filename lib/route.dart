@@ -8,7 +8,7 @@ class RouteGenerator{
     switch (settings.name) {
       case '/landing':
         if(args is String){
-        return MaterialPageRoute(builder: (_)=> Landing(logo: args));
+        return MaterialPageRoute(builder: (_)=> Celana(celana: args));
         }
         return _errorRoute();
         break;
