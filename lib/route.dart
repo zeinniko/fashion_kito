@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gaya_kito/halaman/landing.dart';
-// import 'package:gaya_kito/layar5.dart';
+import 'package:gaya_kito/halaman/celanan.dart';
 import 'package:gaya_kito/halaman/baju.dart';
 class RouteGenerator{
   static Route<dynamic> generateRoute(RouteSettings settings){
@@ -8,7 +8,7 @@ class RouteGenerator{
     switch (settings.name) {
       case '/landing':
         if(args is String){
-        return MaterialPageRoute(builder: (_)=> Celana(celana: args));
+        return MaterialPageRoute(builder: (_)=> Landing(logo: args));
         }
         return _errorRoute();
         break;
