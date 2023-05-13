@@ -52,14 +52,14 @@ class Celana extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            // Image.asset('name'),
-                            Text('Celana'),
+                            Image.asset('../assets/images/baju.jpg', height: 32.0,),
+                            Text('Baju'),
                           ],
                         ),
                       ),
                       onTap: () {Navigator.pushNamed(
-                            context, '/celana',
-                            arguments: '../assets/images/celana.jpg'
+                            context, '/baju',
+                            arguments: '../assets/images/baju.jpg'
                           );},
                     ),
                   ),
@@ -71,18 +71,22 @@ class Celana extends StatelessWidget {
                     height: 75.0,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25.0),
-                        color: Colors.yellow),
+                        color: Colors.green),
+                    padding: EdgeInsets.all(5.0),
                     child: GestureDetector(
                       child: Container(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            // Image.asset('name'),
-                            // Text('Baju'),
+                            Image.asset('../assets/images/celana.jpg', height: 32.0,),
+                            Text('Celana'),
                           ],
                         ),
                       ),
-                      onTap: () {},
+                      onTap: () {Navigator.pushNamed(
+                            context, '/celana',
+                            arguments: '../assets/images/celana.jpg'
+                          );},
                     ),
                   ),
                 ],
