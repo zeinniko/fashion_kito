@@ -18,6 +18,12 @@ class RouteGenerator{
           }
              return _errorRoute();
         break;
+        case '/celana':
+          if(args is String){
+            return MaterialPageRoute(builder: (_)=> Celana(celana: args));
+          }
+             return _errorRoute();
+        break;
       default:
       return _errorRoute();
 
