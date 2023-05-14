@@ -1,16 +1,16 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
-class Celana extends StatelessWidget {
-  final String celana;
-  const Celana({super.key, required this.celana});
+class Landing extends StatelessWidget {
+  final String logo;
+  const Landing({super.key, required this.logo});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('GAYA KITO'),
-        leading: Icon(Icons.shop),
+        leading: Image.asset(logo),
         backgroundColor: Colors.orange,
       ),
       body: Container(
