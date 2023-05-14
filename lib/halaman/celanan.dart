@@ -11,16 +11,68 @@ class Celana extends StatelessWidget {
         title: Text('GAYA KITO'),
         leading: Icon(Icons.shop),
         backgroundColor: Colors.orange,
-         actions: [
-          IconButton(onPressed: (){
-            Navigator.pop(context);
-          },icon: Icon(Icons.exit_to_app))
-         ] 
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.exit_to_app))
+        ],
       ),
       body: Container(
-        child: Image.asset(celana),
+        child: ListView(
+          children: [
+            Text(
+              'Menu fashion celana',
+              style: TextStyle(
+                color: Colors.red,
+                fontFamily: 'Cambria',
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Card(
+              child: ListTile(
+                  leading: Image.asset(
+                    celana,
+                    height: 200.0,
+                  ),
+                  title:
+                      Text('celana dengan desain yang baik \n dan bahan bagus'),
+                  subtitle: Text('~ 190.000')),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Card(
+              child: ListTile(
+                  leading: Image.asset(
+                    celana,
+                    height: 200.0,
+                  ),
+                  title:
+                      Text('celana dengan desain yang baik \n dan bahan bagus'),
+                  subtitle: Text('~ 89.999')),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Card(
+              child: ListTile(
+                  leading: Image.asset(
+                    celana,
+                    height: 200.0,
+                  ),
+                  title:
+                      Text('celana dengan desain yang baik \n dan bahan bagus'),
+                  subtitle: Text('~ 55.000')),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
-
